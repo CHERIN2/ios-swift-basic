@@ -7,32 +7,12 @@ class Calculator {
         self.secondNumber = secondNumber
     } // 초기화
     
-    func add() -> Double {
-        return firstNumber + secondNumber
-    } // 덧셈 정의
-    
-    func subtract() -> Double {
-        return firstNumber - secondNumber
-    } // 뺄셈 정의
-    
-    func multiply() -> Double {
-        return firstNumber * secondNumber
-    } // 곱셈 정의
-    
-    func divide() -> Double {
-        guard secondNumber != 0 else {
-            print("0으로는 계산할 수 없어요.")
-            return 0
-        } // 나누기로 나눌때 0이 되면 수학적으로 계산이 불가능하므로, 0이 되면 계산 불가능하게 하고 문자를 출력하게 함
-        return firstNumber / secondNumber
-    } // 나눗셈 정의
-    
     func remainder() -> Double {
         guard secondNumber != 0 else {
             print("0으로는 나눌 수 없어요.")
             return 0
         } // 나머지 계산도 마찬가지로 0이 되면 몫을 계산할 수 없으므로 같은 방식으로 정의함
-        return firstNumber.truncatingRemainder(dividingBy: secondNumber) // truncatingReminder(dividingBy: _)는 뭔지 모름
+        return firstNumber.truncatingRemainder(dividingBy: secondNumber) // truncatingReminder(dividingBy: _)는 더블로 연산이 불가한 % 수식을 나눌 수 있게 도와주는 프로퍼티임
     } // 나머지 계산 정의
     
     func printResults() {
@@ -43,9 +23,9 @@ class Calculator {
         print("나머지 연산 결과: \(remainder())") // 나머지 계산 결과 프린트문 정의
     }
 }
-    
-   let firstNum: Double = 9
-   let calculator = Calculator(firstNumber: firstNum, secondNumber: 3) // 게산 전용 데이터 정의
+
+let firstNum: Double = 9
+let calculator = Calculator(firstNumber: firstNum, secondNumber: 3) // 게산 전용 데이터 정의
 //   calculator.printResults()
 
 
