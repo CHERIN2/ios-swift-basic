@@ -1,7 +1,7 @@
 import Foundation
 
-extension Calculator { // extension 확장자로 전에 있던 context 안에 있던 계산식에 접근 가능하게 해줌
-    func add() -> Double {
+class addOperation { // class를 사용해서 서로 코드를 분리함
+    func oparate(firstNumber: Double, secondNumber: Double) -> Double {
         return firstNumber + secondNumber
-    } // 덧셈 정의
+    } // 덧셈 계산 정의
 }

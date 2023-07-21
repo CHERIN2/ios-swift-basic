@@ -16,10 +16,10 @@ class Calculator {
     } // 나머지 계산 정의
     
     func printResults() {
-        print("덧셈 결과: \(add())") // 덧셈 결과 프린트문 정의
-        print("뺄셈 결과: \(subtract())") // 뻴셈 결과 프린트문 정의
-        print("곱셈 결과: \(multiply())") // 곱셈 결과 프린트문 정의
-        print("나눗셈 결과: \(divide())") // 나눗셈 결과 프린트문 정의
+        print("덧셈 결과: \(addOperation())") // 덧셈 결과 프린트문 정의
+        print("뺄셈 결과: \(subtractOperation())") // 뻴셈 결과 프린트문 정의
+        print("곱셈 결과: \(multiplyOperation())") // 곱셈 결과 프린트문 정의
+        print("나눗셈 결과: \(divideOperation())") // 나눗셈 결과 프린트문 정의
         print("나머지 연산 결과: \(remainder())") // 나머지 계산 결과 프린트문 정의
     }
 }
@@ -28,9 +28,8 @@ let firstNum: Double = 9
 let calculator = Calculator(firstNumber: firstNum, secondNumber: 3) // 게산 전용 데이터 정의
 //   calculator.printResults()
 
-
-let addResult = String(calculator.add()) // 덧셈 결과 정의
-let subtractResult = String(calculator.subtract()) // 뻴셈 결과 정의
-let multiplyResult = String(calculator.multiply()) // 곱셈 결과 정의
-let divideResult = String(calculator.divide()) // 나눗셈 결과 정의
+let addResult = addOperation() // 덧셈 결과 정의
+let subtractResult = subtractOperation() // 뻴셈 결과 정의
+let multiplyResult = multiplyOperation() // 곱셈 결과 정의
+let divideResult = divideOperation() // 나눗셈 결과 정의
 let remainderResult = String(calculator.remainder()) // 나머지 계산 결과 정의

@@ -1,7 +1,7 @@
 import Foundation
 
-extension Calculator { // extension 확장자로 전에 있던 context 안에 있던 계산식에 접근 가능하게 해줌
-    func divide() -> Double {
+class divideOperation { // class를 사용해서 서로 코드를 분리함
+    func oparate(firstNumber: Double, secondNumber: Double) -> Double {
         guard secondNumber != 0 else {
             print("0으로는 계산할 수 없어요.")
             return 0
