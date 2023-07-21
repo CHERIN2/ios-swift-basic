@@ -26,7 +26,6 @@ class Calculator {
 
 let firstNum: Double = 9
 let calculator = Calculator(firstNumber: firstNum, secondNumber: 3) // 게산 전용 데이터 정의
-//   calculator.printResults()
 
 let addResult = addOperation() // 덧셈 결과 정의
 let subtractResult = subtractOperation() // 뻴셈 결과 정의
